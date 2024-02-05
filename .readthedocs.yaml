@@ -8,6 +8,9 @@ build:
 python:
   install:
     - requirements: docs/requirements.txt
+jobs:
+  pre_install:
+    - bash ./docs/pre_install.sh
 
 sphinx:
   configuration: docs/source/conf.py
